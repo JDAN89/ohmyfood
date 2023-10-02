@@ -1,0 +1,10 @@
+@import 'resets';
+@import 'variables';
+@import 'button';
+
+
+
+.title {
+    font-size: map-get($font-sizes, "extra-large");
+
+}
