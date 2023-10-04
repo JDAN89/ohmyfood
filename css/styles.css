@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* colours */
+/* fonts */
+/* text-sizes */
+.button {
+  background-color: #9356DC;
+}
+
+.title {
+  font-size: 35px;
+}
+
+/*# sourceMappingURL=styles.css.map */
