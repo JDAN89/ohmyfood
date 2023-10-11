@@ -9,19 +9,18 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>ohmyfood</title>
 </head>
 
 <body>
-    <header class="flush-mob">
-        <div class="page-title">
-            <h3 class="title">ohmyfood</h3>
-        </div>
+
+    <!-- header starts here -->
+
+    <header class="page-title">
+        <a href="#" class="headerlogo"><img src="./images/logo/ohmyfood.png" class="logo-image"></a>
     </header>
 
     <main>
@@ -29,16 +28,129 @@
         <div class="topnav">
             <div class="search-container bg-grey-light">
                 <form action="/action_page.php">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="text" placeholder="Paris, Belleville" name="search" class="search-input">
-                    <h4 class="font-size-l">Book the menu you like</h4>
-                    <h5 class="font-size-m">Discover top-of-the-art restaurants we picked for you</h5>
+                    <div class="search dark-grey">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Paris, Belleville" name="search"
+                            class="search-input dark-grey font-size-m">
+                    </div>
+                    <div class="column">
+                        <p class="font-size-l bold">Book the menu you like</p>
+                        <p class="font-size-m">Discover top-of-the-art restaurants we picked for you</p>
 
 
-                    <button type="submit" class="search-button font-size-m">Explore our restaurants</i></button>
+                        <button type="submit" class="search-btn">Explore our restaurants</i></button>
+                    </div>
                 </form>
             </div>
         </div>
+        <div class="container">
+
+            <section class="section">
+                <div>
+                    <h4 class="font-size-l">How it works</h4>
+                </div>
+                <div class="row-instructions column padding">
+
+                    <a class="instructions-btn" href="#">
+
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h5 class="text font-size-s">Choose a restaurant</h5>
+                    </a>
+                    <a class="instructions-btn" href="#">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-list"></i>
+                        </div>
+                        <h5 class="text font-size-s">Create your menu</h5>
+                    </a>
+                    <a class="instructions-btn" href="#">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h5 class="text font-size-s">Go enjoy it at the restaurant</h5>
+                    </a>
+                    <div class="number-icon icon-red">1
+                    </div>
+
+
+
+                </div>
+
+            </section>
+            <section class="flush-mob bg-grey-light">
+                <div class="section">
+                    <h4 class="font-size-xl primary-fon">Restaurants</h4>
+                    <div class="row column">
+                        <a class="card card-activities" href="#">
+                            <img class="card-image size-3 mobile-size"
+                                src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                alt="The Full Palette">
+                            <div class="card-content">
+                                <h5 class="card-title font-size-l">The Full Palette</h5>
+                                <h5 class="font-size-l font-thin">New York</h5>
+                            </div>
+                        </a>
+                        <a class="card card-activities" href="#">
+                            <img class="card-image size-3 mobile-size"
+                                src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="The Full Palette">
+                            <div class="card-content">
+                                <h5 class="card-title font-size-l">The Enchanted plate</h5>
+                                <h5 class="font-size-l font-thin">New York</h5>
+                            </div>
+                        </a>
+                        <a class="card card-activities" href="#">
+                            <img class="card-image size-3 mobile-size"
+                                src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="The Full Palette">
+                            <div class="card-content">
+                                <h5 class="card-title font-size-l font-bold">Bastille</h5>
+                                <h5 class="font-size-l font-thin">New York</h5>
+                            </div>
+                        </a>
+                        <a class="card card-activities" href="#">
+                            <img class="card-image size-3 mobile-size"
+                                src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="The Full Palette">
+                            <div class="card-content">
+                                <h5 class="card-title font-size-l">Le Gourmand</h5>
+                                <p class="font-size-l font-thin">New York</p>
+
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </a>
+
+
+                    </div>
+                </div>
+            </section>
+
+    </main>
+    </div>
+    <footer class="bg-grey section font-white">
+        <div class="container">
+
+            <div class="column font-white">
+
+                <div class="padding">
+                    <a class="logo" href="#">
+                        <picture>
+                            <source srcset="./images/logo/ohmyfood.png" media="(max-width: 768px)">
+                            <img src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood logo">
+                        </picture>
+                    </a>
+                </div>
+                <ul class="no-bullets">
+                    <li><i class="fa-solid fa-utensils"></i> Suggest a restaurant</li>
+                    <li><i class="fa-solid fa-handshake-angle"></i> Become a partner</li>
+                    <li>Legal</li>
+                    <li>Contact</li>
+                </ul>
+
+
+
+            </div>
+        </div>
+    </footer>
 
 </body>
 
