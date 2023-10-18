@@ -1,0 +1,25 @@
+.section {
+    padding: 20px 0;
+}
+
+
+.padding {
+    padding: 10px 0 10px 30px;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-instructions {
+    display: flex;
+    gap: 32px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
