@@ -9,7 +9,12 @@
 @import 'text';
 @import 'images';
 
-
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .padding {
     padding: 10px 0 10px 30px;
@@ -19,6 +24,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
 }
 
 
