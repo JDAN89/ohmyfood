@@ -7,6 +7,9 @@
 @import 'grid';
 @import 'utils';
 @import 'text';
+@import 'images';
+
+
 
 .padding {
     padding: 10px 0 10px 30px;
@@ -24,16 +27,40 @@
     gap: 32px;
 }
 
+.flex-start {
+    justify-content: flex-start;
+}
 
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .page-title {
     text-align: center;
+    background-color: $white;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 
 }
 
 .section-instruction {
     padding-right: 20px;
+
+}
+
+/* header icon */
+
+.header-icon {
+    padding: 0 20px;
 
 }
 
@@ -46,7 +73,6 @@
     z-index: 10;
     background-color: $white;
     border: 0;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 100%;
 
@@ -114,6 +140,10 @@
 
 /* Font sizes */
 
+.font-size-xl {
+    font-size: map-get($font-sizes, "extra-large");
+}
+
 .font-size-l {
     font-size: map-get($font-sizes, "large");
 }
@@ -124,6 +154,10 @@
 
 .font-size-s {
     font-size: map-get($font-sizes, "small");
+}
+
+.font-size-xs {
+    font-size: map-get($font-sizes, "extra-small");
 }
 
 /* Card */

@@ -15,6 +15,26 @@
     transition: border-color 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
+.button {
+
+    border-radius: 30px;
+    border: none;
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    color: #fff;
+    height: 50px;
+    width: 190px;
+    text-align: center;
+    align-items: center;
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.button-section {
+    text-align: center;
+}
+
+
 .instructions-btn {
     @extend %row;
     border-radius: 25px;

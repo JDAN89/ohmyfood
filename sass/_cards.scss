@@ -25,10 +25,39 @@
         height: 300px;
     }
 
-    &-card-title,
+    &-title,
     &-text {
         margin: 0;
     }
 
+}
 
+.card-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+
+
+}
+
+.meal-title {
+    padding-top: 30px;
+    border-bottom: solid 4px #99E2D0;
+    font-weight: 300;
+
+}
+
+
+.card-content {
+    padding: 10px 14px;
+    gap: 5px;
+
+}
+
+.card-title {
+    margin: 0;
+    padding: 0;
 }
