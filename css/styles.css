@@ -19,6 +19,10 @@ ul.no-bullets {
   padding: 0;
 }
 
+ul.no-bullets li {
+  padding: 5px 0;
+}
+
 /* colours */
 /* fonts */
 /* text-sizes */
@@ -46,6 +50,10 @@ ul.no-bullets {
   padding: 0;
 }
 
+ul.no-bullets li {
+  padding: 5px 0;
+}
+
 .search-btn {
   font-size: 15.4px;
   border-radius: 30px;
@@ -59,22 +67,31 @@ ul.no-bullets {
   transition: border-color 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
-.button {
+.btn-order {
+  display: inline-block;
+  padding: 20px 25px;
   border-radius: 30px;
-  border: none;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: #fff;
-  height: 50px;
-  width: 190px;
   text-align: center;
-  align-items: center;
-  transition: border-color 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
-  margin-top: 50px;
-  margin-bottom: 70px;
+  transition: all 0.3s;
+  min-width: 200px;
+}
+
+.shadow {
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
+}
+
+.btn-order:hover {
+  filter: brightness(115%);
+  box-shadow: 0 7px 20px rgb(0, 0, 0);
 }
 
 .button-section {
   text-align: center;
+  padding: 30px 0;
 }
 
 .instructions-btn {
@@ -101,6 +118,38 @@ ul.no-bullets {
 }
 .instructions-btn:hover i:hover {
   color: #9356DC;
+}
+
+.btn-heart {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 0;
+}
+.btn-heart .btn-heart-off {
+  opacity: 1;
+}
+.btn-heart .btn-heart-on {
+  opacity: 0;
+}
+.btn-heart .btn-heart-off,
+.btn-heart .btn-heart-on {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: opacity 0.3s;
+}
+.btn-heart:hover .btn-heart-off {
+  opacity: 0;
+}
+.btn-heart:hover .btn-heart-on {
+  opacity: 1;
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .column, .search-container, .card {
@@ -138,6 +187,21 @@ ul.no-bullets {
 .link-back {
   position: absolute;
   left: 10px;
+}
+
+.footer-icon {
+  width: 900;
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #FF79DA;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 .card {
@@ -302,6 +366,7 @@ ul.no-bullets {
 
 .footer-logo {
   font-family: "Shrikhand", cursive;
+  margin-bottom: 0;
 }
 
 .font-light {
@@ -318,6 +383,11 @@ ul.no-bullets {
 
 .font-secondary {
   font-family: "Shrikhand", cursive;
+}
+
+.text-decor-none {
+  text-decoration: none;
+  color: #fff;
 }
 
 .menu-img {
@@ -339,6 +409,10 @@ ul.no-bullets {
   height: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.shadow {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .flex-row {
@@ -505,5 +579,10 @@ ul.no-bullets {
 }
 
 */
+.shadow {
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
+}
 
 /*# sourceMappingURL=styles.css.map */
