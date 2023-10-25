@@ -135,6 +135,11 @@ ul.no-bullets {
   padding: 5px 5px;
 }
 
+.link-back {
+  position: absolute;
+  left: 10px;
+}
+
 .card {
   border-radius: 20px;
   overflow: hidden;
@@ -184,12 +189,6 @@ ul.no-bullets {
   margin-bottom: 0px;
 }
 
-.meal-title {
-  padding-top: 30px;
-  border-bottom: solid 4px #99E2D0;
-  font-weight: 300;
-}
-
 .card-content {
   padding: 10px 14px;
   gap: 5px;
@@ -198,6 +197,34 @@ ul.no-bullets {
 .card-title {
   margin: 0;
   padding: 0;
+}
+
+.meal-title::after {
+  content: "";
+  height: 4px;
+  display: block;
+  background-color: #99E2D0;
+  width: 30px;
+}
+
+.menu-item__body {
+  width: 100%;
+  padding: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.menu-item__body .menu-item__content,
+.menu-item__body .menu-item__heading {
+  margin: 0;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu-item__body .menu-item__content .menu-item__heading,
+.menu-item__body .menu-item__heading .menu-item__heading {
+  font-size: 17px;
 }
 
 .section {
@@ -231,6 +258,7 @@ ul.no-bullets {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: relative;
   text-align: center;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   padding-top: 10px;
@@ -299,6 +327,7 @@ ul.no-bullets {
   position: absolute;
   z-index: -10;
   top: 50px;
+  object-fit: cover;
 }
 
 .padding-btm {

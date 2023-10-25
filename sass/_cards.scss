@@ -58,14 +58,6 @@
 
 }
 
-.meal-title {
-    padding-top: 30px;
-    border-bottom: solid 4px #99E2D0;
-    font-weight: 300;
-
-}
-
-
 .card-content {
     padding: 10px 14px;
     gap: 5px;
@@ -75,4 +67,41 @@
 .card-title {
     margin: 0;
     padding: 0;
+}
+
+.meal-title::after {
+    content: '';
+    height: 4px;
+    display: block;
+    background-color: #99E2D0;
+    width: 30px;
+
+}
+
+.menu-item__body {
+    width: 100%;
+    padding: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    .menu-item__content,
+    .menu-item__heading {
+        margin: 0;
+        font-size: 15px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        .menu-item__heading {
+            font-size: 17px;
+        }
+
+    }
+}
+
+
+
+.shadow {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
