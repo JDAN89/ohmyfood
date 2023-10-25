@@ -97,12 +97,10 @@ ul.no-bullets li {
 .instructions-btn {
   border-radius: 25px;
   background-color: #F6F6F6;
-  height: 80px;
   align-items: center;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
   padding-top: 4px;
-  padding-left: 30px;
   gap: 20px;
 }
 .instructions-btn .filter-icon {
@@ -145,11 +143,7 @@ ul.no-bullets li {
 }
 .btn-heart:hover .btn-heart-on {
   opacity: 1;
-}
-
-li a {
-  color: #fff;
-  text-decoration: none;
+  color: #FF79DA;
 }
 
 .column, .search-container, .card {
@@ -204,10 +198,32 @@ li a:hover {
   text-decoration: underline;
 }
 
+.number-icon {
+  height: 27px;
+  width: 27px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -12px;
+}
+
+.card-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-group .card {
+  min-width: 300px;
+  flex: 1 1 0;
+}
+
 .card {
   border-radius: 20px;
   overflow: hidden;
-  border: solid 5px white;
   background-color: white;
   text-decoration: none;
   color: black;
@@ -411,10 +427,6 @@ li a:hover {
   margin-bottom: 10px;
 }
 
-.shadow {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -579,10 +591,5 @@ li a:hover {
 }
 
 */
-.shadow {
-  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5);
-  position: relative;
-  z-index: 10;
-}
 
 /*# sourceMappingURL=styles.css.map */

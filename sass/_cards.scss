@@ -1,8 +1,18 @@
+.card-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-group .card {
+    min-width: 300px;
+    flex: 1 1 0;
+}
+
 .card {
     @extend %column;
     border-radius: 20px;
     overflow: hidden;
-    border: solid 5px white;
     background-color: white;
     text-decoration: none;
     color: black;
