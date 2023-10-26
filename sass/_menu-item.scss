@@ -1,0 +1,32 @@
+.menu-item {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    transition: box-shadow 0.3s;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.menu-item__body {
+    width: 100%;
+    padding: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    .menu-item__content,
+    .menu-item__heading {
+        margin: 0;
+        font-size: 15px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        .menu-item__heading {
+            font-size: 17px;
+        }
+
+    }
+}

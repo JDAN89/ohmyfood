@@ -87,25 +87,3 @@
     width: 30px;
 
 }
-
-.menu-item__body {
-    width: 100%;
-    padding: 15px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-
-    .menu-item__content,
-    .menu-item__heading {
-        margin: 0;
-        font-size: 15px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-
-        .menu-item__heading {
-            font-size: 17px;
-        }
-
-    }
-}
