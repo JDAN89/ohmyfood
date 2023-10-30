@@ -19,15 +19,11 @@
     transition: box-shadow 0.3s;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
-    &-card-activities {
-        border: 0;
-    }
-
-    &-card-content {
+    &-card__content {
         padding: 10px 14px;
     }
 
-    &-card-image {
+    &-card__image {
         object-fit: cover;
         object-position: center;
         width: 100%;
@@ -35,10 +31,12 @@
         height: 300px;
     }
 
-    &-title,
-    &-text {
+    &__title,
+    &__text {
         margin: 0;
     }
+
+
 
 
 }
@@ -79,6 +77,7 @@
     padding: 0;
 }
 
+/* heading underline */
 .meal-title::after {
     content: '';
     height: 4px;
@@ -86,4 +85,8 @@
     background-color: #99E2D0;
     width: 30px;
 
+}
+
+.card-new {
+    position: relative;
 }

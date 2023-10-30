@@ -45,3 +45,21 @@ li a:hover {
     justify-content: center;
     margin-left: -12px;
 }
+
+.icon-location {
+    position: absolute;
+    left: 20px;
+}
+
+.icon-new {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    background-color: $tertiary;
+    border-radius: 5px;
+    right: 20px;
+    top: 17px;
+}

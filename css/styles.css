@@ -213,6 +213,24 @@ li a:hover {
   margin-left: -12px;
 }
 
+.icon-location {
+  position: absolute;
+  left: 20px;
+}
+
+.icon-new {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  background-color: #99E2D0;
+  border-radius: 5px;
+  right: 20px;
+  top: 17px;
+}
+
 .card-group {
   display: flex;
   gap: 20px;
@@ -233,20 +251,17 @@ li a:hover {
   transition: box-shadow 0.3s;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
-.card-card-activities {
-  border: 0;
-}
-.card-card-content {
+.card-card__content {
   padding: 10px 14px;
 }
-.card-card-image {
+.card-card__image {
   object-fit: cover;
   object-position: center;
   width: 100%;
   max-width: 100%;
   height: 300px;
 }
-.card-title, .card-text {
+.card__title, .card__text {
   margin: 0;
 }
 
@@ -282,12 +297,17 @@ li a:hover {
   padding: 0;
 }
 
+/* heading underline */
 .meal-title::after {
   content: "";
   height: 4px;
   display: block;
   background-color: #99E2D0;
   width: 30px;
+}
+
+.card-new {
+  position: relative;
 }
 
 .section {
@@ -307,21 +327,6 @@ li a:hover {
 .row-instructions {
   display: flex;
   gap: 32px;
-}
-
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 0 20px;
-}
-
-.container-rest {
-  padding-top: 60px;
-  padding-bottom: 100px;
-}
-
-.container-expl {
-  align-items: center;
 }
 
 /* Bastille */
@@ -478,6 +483,10 @@ li a:hover {
   padding-bottom: 100px;
 }
 
+.container-expl {
+  align-items: center;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -544,6 +553,7 @@ li a:hover {
   border: 0;
   width: 100%;
   height: 100%;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 .headerlogo .logo-image {
   height: 28px;
@@ -561,12 +571,13 @@ li a:hover {
 .search {
   position: relative;
   text-align: center;
-  align-items: baseline;
+  align-items: center;
   width: 100%;
   max-width: 100%;
   border: 0;
   padding-left: 305px;
   font-size: 15.4px;
+  height: 50px;
 }
 
 .search-icon {
@@ -579,14 +590,8 @@ li a:hover {
 }
 
 .search-input {
-  border: 0px;
-  padding: 10px;
-  width: 200px;
-  height: 100%;
   background-color: transparent;
-  display: block;
-  margin: 0px auto 16px;
-  padding: 0px 16px;
+  border: none;
 }
 
 .dark-grey {
