@@ -19,11 +19,15 @@
     transition: box-shadow 0.3s;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
-    &-card__content {
+    &-card-activities {
+        border: 0;
+    }
+
+    &-card-content {
         padding: 10px 14px;
     }
 
-    &-card__image {
+    &-card-image {
         object-fit: cover;
         object-position: center;
         width: 100%;
@@ -31,12 +35,10 @@
         height: 300px;
     }
 
-    &__title,
-    &__text {
+    &-title,
+    &-text {
         margin: 0;
     }
-
-
 
 
 }
@@ -87,6 +89,14 @@
 
 }
 
-.card-new {
-    position: relative;
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.restaurants {
+    background-color: $light-grey;
 }
