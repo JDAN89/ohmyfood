@@ -18,3 +18,68 @@
     font-family: $font-logo;
     margin-bottom: 0;
 }
+
+.dis-flex {
+    display: flex;
+}
+
+.flex-grow {
+    flex-grow: 2;
+}
+
+.columns {
+    flex-direction: column;
+}
+
+.txt-centered {
+    text-align: center;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 20px 25px;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s;
+    min-width: 200px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.nav-bar__logo-wrapper {
+    padding: 20px o;
+}
+
+.padding {
+    padding: 20px o;
+}
+
+.padding-top-1 {
+    padding-top: 10px;
+}
+
+.padding-top-2 {
+    padding-top: 20px;
+}
+
+.padding-top-3 {
+    padding-top: 30px;
+}
+
+.padding-bottom-1 {
+    padding-top: 10px;
+}
+
+.padding-top-2 {
+    padding-top: 20px;
+}
+
+.padding-top-3 {
+    padding-top: 30px;
+}

@@ -1,4 +1,4 @@
-.icon__filter {
+.filter-icon {
     height: 50px;
     width: 50px;
     display: flex;
@@ -34,7 +34,7 @@ li a:hover {
     text-decoration: underline;
 }
 
-.icon__number {
+.steps__number {
     height: 27px;
     width: 27px;
     background-color: $primary;
@@ -44,22 +44,4 @@ li a:hover {
     align-items: center;
     justify-content: center;
     margin-left: -12px;
-}
-
-.icon-location {
-    position: absolute;
-    left: 20px;
-}
-
-.icon-new {
-    display: block;
-    text-align: center;
-    padding: 10px 15px;
-    position: absolute;
-    width: 100px;
-    height: 40px;
-    background-color: $tertiary;
-    border-radius: 5px;
-    right: 20px;
-    top: 17px;
 }

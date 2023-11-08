@@ -3,21 +3,12 @@
 
 
 
-.search-btn {
-    font-size: map-get($font-sizes, "small");
-    border-radius: 30px;
-    border: none;
-    background-image: linear-gradient(to bottom right, $secondary, $primary);
-    color: $white;
-    height: 45px;
-    width: 215px;
-    text-align: center;
-    align-items: center;
-    transition: border-color 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
+
+.btn {
+    display: inline-block;
 }
 
-.btn__order {
-    display: inline-block;
+.btn .btn-primary {
     padding: 20px 25px;
     border-radius: 30px;
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -27,92 +18,7 @@
     min-width: 200px;
 }
 
-
-.shadow {
-    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5);
-    position: relative;
-    z-index: 10;
-}
-
-.btn-order:hover {
+.btn-primary:hover {
     filter: brightness(115%);
     box-shadow: 0 7px 20px rgba(0, 0, 0, 1);
-}
-
-.button-section {
-    text-align: center;
-    padding: 30px 0;
-}
-
-
-.instructions-btn {
-    @extend %row;
-    border-radius: 25px;
-    background-color: $light-grey;
-    align-items: center;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    transition: border-color 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    padding-top: 4px;
-    gap: 20px;
-
-    .icon__filter {
-        height: 50px;
-        width: 50px;
-        @extend flex-center !optional;
-        border-radius: 50%;
-
-    }
-
-    &:hover {
-        background-color: lighten($primary, 20%);
-
-        i {
-            color: $black;
-
-            &:hover {
-                color: $primary ;
-            }
-        }
-    }
-
-}
-
-.btn-heart {
-    position: relative;
-    height: 20px;
-    width: 30px;
-    background-color: transparent;
-    border: 0;
-    font-size: 27px;
-
-    .btn-heart-off {
-        opacity: 1;
-    }
-
-    .btn-heart-on {
-        opacity: 0;
-    }
-
-
-    .btn-heart-off,
-    .btn-heart-on {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transition: opacity 0.3s;
-    }
-
-    &:hover {
-        .btn-heart-off {
-            opacity: 0;
-        }
-
-        .btn-heart-on {
-            opacity: 1;
-            color: transparent;
-            background-clip: text;
-            background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-        }
-
-    }
 }
