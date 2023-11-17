@@ -4,21 +4,41 @@
 
 
 
-.btn {
-    display: inline-block;
-}
 
-.btn .btn-primary {
-    padding: 20px 25px;
-    border-radius: 30px;
-    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-    color: #fff;
-    text-align: center;
-    transition: all 0.3s;
-    min-width: 200px;
-}
+.btn-heart {
+    position: relative;
+    height: 34px;
+    width: 34px;
+    background-color: transparent;
+    border: 0;
+    font-size: 27px;
 
-.btn-primary:hover {
-    filter: brightness(115%);
-    box-shadow: 0 7px 20px rgba(0, 0, 0, 1);
+    .btn-heart__on {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        opacity: 0;
+        transition: opacity 300ms;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+    }
+
+    .btn-heart__off {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        transition: opacity 300ms;
+    }
+
+    &:hover {
+        .btn-heart__on {
+            opacity: 1;
+        }
+
+        .btn-heart__off {
+            opacity: 0;
+        }
+    }
 }

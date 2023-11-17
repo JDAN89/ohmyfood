@@ -1,31 +1,110 @@
 .menu-item {
-    border-radius: 20px;
+    background: wh;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
     overflow: hidden;
-    background-color: white;
-    text-decoration: none;
-    color: black;
-    transition: box-shadow 0.3s;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-}
-
-
-.menu-item__body {
-    width: 100%;
-    padding: 15px;
-    overflow: hidden;
+    cursor: pointer;
     display: flex;
-    flex-direction: column;
 
-    .menu-item__content,
-    .menu-item__heading {
-        margin: 0;
-        font-size: 15px;
-        text-overflow: ellipsis;
+    .menu-item__price {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    &:hover {
+        .menu-item__checkmark {
+            width: 75px;
+        }
+
+        .menu-item__checkmark-icon {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+    }
+
+    .menu-item__body {
+        width: 100%;
+        padding: 15px;
         overflow: hidden;
-        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+
+        .menu-item__content,
+        .menu-item__heading {
+            margin: 0;
+            font-size: 15px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
 
         .menu-item__heading {
             font-size: 17px;
+        }
+    }
+
+    .menu-item__checkmark {
+        width: 0;
+        background: blue;
+        transition: width 1s;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-item__checkmark-icon {
+        transform: rotate(360deg);
+        transition: transform 1s;
+        color: white;
+    }
+}
+
+
+
+
+
+
+.btn-heart {
+    position: relative;
+    height: 20px;
+    width: 30px;
+    background-color: transparent;
+    border: 0;
+    font-size: 27px;
+
+    .btn-heart-off {
+        opacity: 1;
+    }
+
+    .btn-heart-on {
+        opacity: 0;
+    }
+
+
+    .btn-heart-off,
+    .btn-heart-on {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: opacity 0.3s;
+    }
+
+    &:hover {
+        .btn-heart-off {
+            opacity: 0;
+        }
+
+        .btn-heart-on {
+            opacity: 1;
+            color: transparent;
+            background-clip: text;
+            background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
         }
 
     }

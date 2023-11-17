@@ -45,3 +45,42 @@ li a:hover {
     justify-content: center;
     margin-left: -12px;
 }
+
+
+.btn-heart {
+    position: relative;
+    height: 34px;
+    width: 34px;
+    background-color: transparent;
+    border: 0;
+    font-size: 27px;
+
+    .btn-heart__on {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        opacity: 0;
+        transition: opacity 300ms;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+    }
+
+    .btn-heart__off {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        transition: opacity 300ms;
+    }
+
+    &:hover {
+        .btn-heart__on {
+            opacity: 1;
+        }
+
+        .btn-heart__off {
+            opacity: 0;
+        }
+    }
+}

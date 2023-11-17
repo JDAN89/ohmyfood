@@ -1,12 +1,14 @@
-.bg-grey-light {
+/* background colours */
+
+.bg-grey--light {
     background-color: $light-grey;
 }
 
-.bg-grey-dark {
+.bg-grey--dark {
     background-color: $dark-grey;
 }
 
-.bg-grey-medium {
+.bg-grey--medium {
     background-color: $medium-grey;
 }
 
@@ -35,15 +37,18 @@
     text-align: center;
 }
 
-.btn-primary {
-    display: inline-block;
-    padding: 20px 25px;
-    border-radius: 30px;
-    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-    color: #fff;
-    text-align: center;
-    transition: all 0.3s;
-    min-width: 200px;
+.pd-bot--1 {
+    padding-bottom: 60px;
+}
+
+.pd-top--1 {
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
 }
 
 .row {
@@ -60,26 +65,35 @@
     padding: 20px o;
 }
 
-.padding-top-1 {
+.space-top-1 {
     padding-top: 10px;
 }
 
-.padding-top-2 {
+.space-top-2 {
     padding-top: 20px;
 }
 
-.padding-top-3 {
+.space-top-3 {
     padding-top: 30px;
 }
 
-.padding-bottom-1 {
+.space-bot-1 {
     padding-top: 10px;
 }
 
-.padding-top-2 {
+.space-bot-2 {
     padding-top: 20px;
 }
 
-.padding-top-3 {
+.space-bot-3 {
     padding-top: 30px;
+}
+
+.bg-grey--light {
+    background-color: #F6F6F6;
+}
+
+
+.title {
+    margin-top: 0;
 }
