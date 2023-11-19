@@ -19,10 +19,10 @@
 
     <!-- header starts here -->
 
-    <header>
-        <nav class="nav-bar padding">
-            <div class="nav-bar__logo-wrapper txt-centered">
-                <img src="./images/logo/ohmyfood.png" class="nav-bar__logo sz-m">
+    <header class="shadow front">
+        <nav class="nav-bar container">
+            <div class="nav-bar__logo-wrapper txt-centered pd-top--3 pd-bot--3">
+                <img src="./images/logo/ohmyfood.png" class="nav-bar__logo">
             </div>
         </nav>
 
@@ -35,18 +35,23 @@
     <!-- top section starts here -->
 
     <main>
-        <div class="txt-centered bg-grey-medium padding ">
-            <input type="text" placeholder="&#xf041; Paris, Belleville" name="restaurants-search-bar"
-                class="search-bar">
+        <div class="bg-grey--medium">
+            <div class="search container">
+                <div class="search__icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <input type="text" placeholder="Paris, Belleville" name="restaurants-search-bar"
+                    class="search__input pd-top--2 pd-bot--2">
+            </div>
         </div>
 
         <section>
-            <div class="bg-grey-light txt-centered">
+            <div class="bg-grey--light txt-centered pd-top--1 pd-bot--1">
                 <div class="container">
                     <h2>Book the menu you like</h2>
                     <p class="txt-sz-m font-light">Discover top-of-the-art restaurants we picked for you</p>
 
-                    <button class="btn btn-primary" type="button">Explore our restaurants</button>
+                    <button class="btn btn__primary" type="button">Explore our restaurants</button>
 
                 </div>
             </div>
@@ -56,39 +61,38 @@
 
         <!-- mid section starts here -->
 
-        <section>
+        <section class="pd-bot--1">
+            <div class="container">
 
+                <h2 class="pd-top--1 pd-bot--2 title">How it works</h2>
 
+                <div class="steps">
 
-            <div class="steps container dis-flex row">
-
-                <h2>How it works</h2>
-
-                <div class="steps__items" href="#">
-                    <div class="steps__number">1
-                    </div>
-                    <div class="steps__icon">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                    </div>
-                    <h5 class="steps__text">Choose a restaurant</h5>
+                    <li class="steps__items steps__item--bg-grey shadow" href="#">
+                        <div class="steps__number">1
+                        </div>
+                        <div class="steps__icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h5 class="steps__text">Choose a restaurant</h5>
+                    </li>
+                    <li class="steps__items steps__item--bg-grey shadow" href="#">
+                        <div class="steps__number">2
+                        </div>
+                        <div class="steps__icon">
+                            <i class="fa-solid fa-list icon"></i>
+                        </div>
+                        <h5 class="steps__text">Choose your menu</h5>
+                    </li>
+                    <li class="steps__items steps__item--bg-grey shadow" href="#">
+                        <div class="steps__number">3
+                        </div>
+                        <div class="steps__icon">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h5 class="steps__text">Go enjoy it at the restaurant</h5>
+                    </li>
                 </div>
-                <div class="steps__items" href="#">
-                    <div class="steps__number">2
-                    </div>
-                    <div class="steps__icon">
-                        <i class="fa-solid fa-list"></i>
-                    </div>
-                    <h5 class="steps__text">Create your menu</h5>
-                </div>
-                <div class="steps__items" href="#">
-                    <div class="steps__number">3
-                    </div>
-                    <div class="steps__icon">
-                        <i class="fa-solid fa-store"></i>
-                    </div>
-                    <h5 class="steps__text">Go enjoy it at the restaurant</h5>
-                </div>
-
         </section>
 
         <!-- mid section ends here -->
@@ -200,28 +204,24 @@
 
     <!-- footer starts here -->
 
-    <footer class="bg-grey-dark section font-white">
+    <footer class="bg-grey--dark font-white pd-bot--2">
         <div class="container">
 
             <div class="column font-white">
 
-                <div class="column font-white">
 
-                    <h2 class="footer-logo font-size-m">ohmyfood</h2>
-                    <ul class="no-bullets font-size-s">
-                        <li><a href="#"><i class="fa-solid fa-utensils footer-icon"></i> Suggest a
-                                restaurant</a></li>
-                        <li><a href="#"><i class="fa-solid fa-handshake-angle footer-icon"></i> Become a partner</a>
-                        </li>
-                        <li><a href="#">Legal</a></li>
-                        <li><a href="mailto:contactus@ohmyfood.co.uk">Contact</a></li>
-                    </ul>
+                <h2 class="footer-logo font-size-m pd-bot--2 pd-top--2">ohmyfood</h2>
+                <ul class="no-bullets font-size-s">
+                    <li><a href="#"><i class="fa-solid fa-utensils footer__icon--1"></i> Suggest a
+                            restaurant</a></li>
+                    <li><a href="#"><i class="fa-solid fa-handshake-angle footer__icon--2"></i> Become a partner</a>
+                    </li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="mailto:contactus@ohmyfood.co.uk">Contact</a></li>
+                </ul>
 
-
-
-
-                </div>
             </div>
+        </div>
     </footer>
 </body>
 

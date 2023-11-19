@@ -1,3 +1,22 @@
+.menu {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    border-radius: 40px 40px 0 0;
+    margin-top: 210px !important;
+
+}
+
+.menu-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
 .menu-item {
     background: wh;
     border-radius: 16px;
@@ -11,6 +30,8 @@
         display: flex;
         align-items: center;
         padding: 20px;
+        background-color: $white;
+
     }
 
     &:hover {
@@ -30,6 +51,7 @@
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        background-color: $white;
 
         .menu-item__content,
         .menu-item__heading {
@@ -47,7 +69,7 @@
 
     .menu-item__checkmark {
         width: 0;
-        background: blue;
+        background: $tertiary;
         transition: width 1s;
         right: 0;
         top: 0;
@@ -65,47 +87,9 @@
     }
 }
 
-
-
-
-
-
-.btn-heart {
-    position: relative;
-    height: 20px;
-    width: 30px;
-    background-color: transparent;
-    border: 0;
-    font-size: 27px;
-
-    .btn-heart-off {
-        opacity: 1;
-    }
-
-    .btn-heart-on {
-        opacity: 0;
-    }
-
-
-    .btn-heart-off,
-    .btn-heart-on {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transition: opacity 0.3s;
-    }
-
-    &:hover {
-        .btn-heart-off {
-            opacity: 0;
-        }
-
-        .btn-heart-on {
-            opacity: 1;
-            color: transparent;
-            background-clip: text;
-            background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-        }
-
-    }
+.meal-title {
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+    padding-top: 20px;
 }

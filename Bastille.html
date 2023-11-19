@@ -16,37 +16,38 @@
 </head>
 
 <body>
-    <header class="padding-btm">
-        <div class="page-title">
-            <a href="#" class="link-back"><i class="fa-solid fa-arrow-left flex-start"></i></a>
-            <a href="#"><img src="./images/logo/ohmyfood.png" class="header-logo"></a>
-        </div>
+    <!-- header starts here -->
+
+    <header class="shadow front bg-white">
+        <nav class="nav-bar container">
+            <a href="#" class="nav-bar__link-back"><i class="fa-solid fa-arrow-left flex-start"></i></a>
+            <div class="nav-bar__logo-wrapper txt-centered pd-top--3 pd-bot--3">
+                <img src="./images/logo/ohmyfood.png" class="nav-bar__logo">
+            </div>
+        </nav>
+
     </header>
+
+    <!-- header ends here -->
     <main>
         <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="menu-img">
-        <section class="section-menu container shadow">
-            <div class="container-meal ">
-                <div class="flex">
-                    <h1 class="menu-title font-secondary">Bastille</h1>
+        <section>
+            <div class="menu container shadow">
+                <div class="menu-title pd-top--2">
+                    <h1 class="font-secondary">Bastille</h1>
                     <button class="btn-heart">
-                        <i class="fa-solid fa-heart btn-heart-on"></i>
-                        <i class="fa-regular fa-heart btn-heart-off"></i>
+                        <i class="fa-solid fa-heart btn-heart__on"></i>
+                        <i class="fa-regular fa-heart btn-heart__off"></i>
                     </button>
                 </div>
-                <h2 class="meal-title font-size-s">ENTREES</h2>
-                <div class="menu-item menu-item-1">
-                    <div class="menu-item__body">
-                        <h4 class="menu-item__heading">Citrus Squid Carpaccio</h4>
-                        <p class="menu-item__content">With orange zest</p>
-                    </div>
-                    <div class="menu_item__price">25€</div>
-                    <div class="menu-item__check"></div>
-                </div>
+
+                <h2 class="meal-title">ENTREES</h2>
+
                 <div class="menu-item menu-item-1">
                     <div class="menu-item__body">
                         <h4 class="menu-item__heading">Cirtrus Squid Carpaccio</h4>
                         <p class="menu-item__content">
-                            with orange zest with orange zest with orange zest with orange zest
+                            with orange zest
                         </p>
                     </div>
                     <div class="menu-item__price">25€</div>
@@ -54,76 +55,140 @@
                         <i class="fas fa-check-circle fa-lg menu-item__checkmark-icon"></i>
                     </div>
                 </div>
-            </div>
-            </div>
-            <a class="card card-most-popular card-content" href="#">
-                <h5 class="card__title font-size-s">Onion soup</h5>
-                <p class="card-description font-size-xs">Revisited <strong>20€</strong></p>
-            </a>
-            </div>
-            <div class="container-meal">
-                <h2 class="meal-title font-size-s">MAIN DISH</h2>
+
                 <div class="menu-item menu-item-1">
                     <div class="menu-item__body">
-                        <h4 class="menu-item__heading">Cirtrus Squid Carpaccio</h4>
+                        <h4 class="menu-item__heading">Grandmother's vegetable soup</h4>
                         <p class="menu-item__content">
-                            with orange zest with orange zest with orange zest with orange zest
+                            Carrots, parsnips, Jerusalem artichokes
                         </p>
                     </div>
-                    <button class="btn-heart">
-                        <i class="fa-solid fa-heart btn-heart-on"></i>
-                        <i class="fa-regular fa-heart btn-heart-off"></i>
-                    </button>
+                    <div class="menu-item__price">35€</div>
+                    <div class="menu-item__checkmark">
+                        <i class="fas fa-check-circle fa-lg menu-item__checkmark-icon"></i>
+                    </div>
                 </div>
-            </div>
-            <a class="card card-most-popular card-content" href="#">
-                <h5 class="card__title font-size-s">Magret de Canard</h5>
-                <p class="card-description font-size-xs">With mashed potato <strong>35€</strong>
-                </p>
-            </a>
-            <a class="card card-most-popular card-content" href="#">
-                <h5 class="card__title font-size-s">Game Hen</h5>
-                <p class="card-description font-size-xs">With vegetable gnochis <strong>44€</strong></p>
-            </a>
-            </div>
-            <div class="container-meal">
-                <h2 class="meal-title font-size-s">DESSERTS</h2>
-                <a class="card card-most-popular card-content" href="#">
-                    <h5 class="card__title font-size-s">Floral Ice Cream</h5>
-                    <p class="card-description font-size-xs">With hazlenut butter <strong>18€</strong></p>
-                </a>
-                <a class="card card-most-popular card-content" href="#">
-                    <h5 class="card__title font-size-s">Chocalate Lave Cake</h5>
-                    <p class="card-description font-size-xs">Revisisted <strong>22€</strong>
-                    </p>
-                </a>
-                <a class="card card-most-popular card-content" href="#">
-                    <h5 class="card__title font-size-s">Napolean</h5>
-                    <p class="card-description font-size-xs">With blueberries and marzipan <strong>23€</strong></p>
-                </a>
-            </div>
+
+                <div class="menu-item menu-item-1">
+                    <div class="menu-item__body">
+                        <h4 class="menu-item__heading">Onion soup</h4>
+                        <p class="menu-item__content">
+                            Revisisted
+                        </p>
+                    </div>
+                    <div class="menu-item__price">20€</div>
+                    <div class="menu-item__checkmark">
+                        <i class="fas fa-check-circle fa-lg menu-item__checkmark-icon"></i>
+                    </div>
+                </div>
 
 
-            <div class="button-section">
-                <a href="#" class="btn-order font-size-m shadow">Order</i></a>
-            </div>
+
+                <h2 class="meal-title">MAIN DISH</h2>
+
+                <div class="menu-item menu-item-1">
+                    <div class="menu-item__body">
+                        <h4 class="menu-item__heading">Scallops</h4>
+                        <p class="menu-item__content">
+                            with mashed parsnips
+                        </p>
+                    </div>
+                    <div class="menu-item__price">40€</div>
+                    <div class="menu-item__checkmark">
+                        <i class="fas fa-check-circle fa-lg menu-item__checkmark-icon"></i>
+                    </div>
+                </div>
+
+                <div class="menu-item menu-item-1">
+                    <div class="menu-item__body">
+                        <h4 class="menu-item__heading">Magret de Canard</h4>
+                        <p class="menu-item__content">
+                            With mashed potato
+                        </p>
+                    </div>
+                    <div class="menu-item__price">35€</div>
+                    <div class="menu-item__checkmark">
+                        <i class="fas fa-check-circle fa-lg menu-item__checkmark-icon"></i>
+                    </div>
+                </div>
+
+                <div class="menu-item menu-item-1">
+                    <div class="menu-item__body">
+                        <h4 class="menu-item__heading">Game Hen</h4>
+                        <p class="menu-item__content">
+                            With vegetable gnochis
+                        </p>
+                    </div>
+                    <div class="menu-item__price">44€</div>
+                    <div class="menu-item__checkmark">
+                        <i class="fas fa-check-circle fa-lg menu-item__checkmark-icon"></i>
+                    </div>
+                </div>
+
+                <h2 class="meal-title">DESSERTS</h2>
+
+                <div class="menu-item menu-item-1">
+                    <div class="menu-item__body">
+                        <h4 class="menu-item__heading">Floral Ice Cream</h4>
+                        <p class="menu-item__content">
+                            With hazlenut butter
+                        </p>
+                    </div>
+                    <div class="menu-item__price">18€</div>
+                    <div class="menu-item__checkmark">
+                        <i class="fas fa-check-circle fa-lg menu-item__checkmark-icon"></i>
+                    </div>
+                </div>
+
+                <div class="menu-item menu-item-1">
+                    <div class="menu-item__body">
+                        <h4 class="menu-item__heading">Chocalate Lave Cake</h4>
+                        <p class="menu-item__content">
+                            Revisisted
+                        </p>
+                    </div>
+                    <div class="menu-item__price">22€</div>
+                    <div class="menu-item__checkmark">
+                        <i class="fas fa-check-circle fa-lg menu-item__checkmark-icon"></i>
+                    </div>
+                </div>
+
+                <div class="menu-item menu-item-1">
+                    <div class="menu-item__body">
+                        <h4 class="menu-item__heading">Napolean</h4>
+                        <p class="menu-item__content">
+                            With blueberries and marzipan
+                        </p>
+                    </div>
+                    <div class="menu-item__price">23€</div>
+                    <div class="menu-item__checkmark">
+                        <i class="fas fa-check-circle fa-lg menu-item__checkmark-icon"></i>
+                    </div>
+                </div>
+
+                <div class="txt-centered pd-top--2 pd-bot--2">
+                    <button class="btn btn__secondary" type="button">Order</button>
+                </div>
         </section>
     </main>
-    <footer class="bg-grey-dark section font-white">
+
+    <!-- footer starts here -->
+
+    <footer class="bg-grey--dark font-white pd-bot--2">
         <div class="container">
 
             <div class="column font-white">
 
-                <h2 class="footer-logo font-size-m">ohmyfood</h2>
+
+                <h2 class="footer-logo font-size-m pd-bot--2 pd-top--2">ohmyfood</h2>
                 <ul class="no-bullets font-size-s">
-                    <li><a href="#"><i class="fa-solid fa-utensils footer-icon"></i> Suggest a
+                    <li><a href="#"><i class="fa-solid fa-utensils footer__icon--1"></i> Suggest a
                             restaurant</a></li>
-                    <li><a href="#"><i class="fa-solid fa-handshake-angle footer-icon"></i> Become a partner</a></li>
+                    <li><a href="#"><i class="fa-solid fa-handshake-angle footer__icon--2"></i> Become a partner</a>
+                    </li>
                     <li><a href="#">Legal</a></li>
                     <li><a href="mailto:contactus@ohmyfood.co.uk">Contact</a></li>
                 </ul>
-
-
 
             </div>
         </div>

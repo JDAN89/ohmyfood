@@ -42,3 +42,41 @@
         }
     }
 }
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+
+.btn__primary,
+.btn__secondary {
+    font-size: map-get($font-sizes, "small");
+    border-radius: 30px;
+    border: none;
+    background-image: linear-gradient(to bottom right, $secondary, $primary);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    color: $white;
+    padding: 18px 20px;
+    text-align: center;
+    align-items: center;
+    transition: all 0.3s;
+    width: 100%;
+
+}
+
+.btn__secondary {
+    width: 200px;
+}
+
+.btn__primary,
+.btn__secondary {
+
+    &:hover {
+        transform: scale(1.15);
+        filter: brightness(115%);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 2);
+
+    }
+}

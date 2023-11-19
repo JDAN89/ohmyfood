@@ -19,8 +19,14 @@
     left: 10px;
 }
 
-.footer-icon {
-    width: 900;
+.footer__icon--1 {
+    font-size: 15px;
+    padding-right: 5px;
+}
+
+.footer__icon--2 {
+    font-size: 11px;
+    padding-right: 5px;
 }
 
 li a {
@@ -64,7 +70,7 @@ li a:hover {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+
     }
 
     .btn-heart__off {
