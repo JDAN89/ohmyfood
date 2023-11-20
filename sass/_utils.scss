@@ -1,20 +1,26 @@
+@import 'variables';
+
 /* background colours */
 
-.bg-grey--light {
+.bg--light-1 {
+    background-color: $white;
+}
+
+.bg--light-2 {
     background-color: $light-grey;
 }
 
-.bg-grey--dark {
-    background-color: $dark-grey;
-}
-
-.bg-grey--medium {
+.bg--medium {
     background-color: $medium-grey;
 }
 
-.bg-white {
-    background-color: $white;
+.bg--dark {
+    background-color: $dark-grey;
 }
+
+
+
+
 
 .font-white {
     color: $white;

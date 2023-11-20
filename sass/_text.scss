@@ -1,4 +1,6 @@
-.font-light {
+@import 'variables';
+
+.txt-light {
     font-weight: 300;
 }
 
@@ -10,9 +12,6 @@
     font-weight: 700;
 }
 
-.font-secondary {
-    font-family: $font-logo;
-}
 
 .text-decor-none {
     text-decoration: none;
@@ -38,7 +37,7 @@
 }
 
 .corp-txt {
-    font-family: 'Shrikhand', cursive;
+    font-family: $font-logo;
     font-size: 30px;
     margin-bottom: 0;
 }
