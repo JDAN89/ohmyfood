@@ -4,7 +4,7 @@
     flex-direction: column;
     background-color: #F6F6F6;
     border-radius: 40px 40px 0 0;
-    margin-top: 210px !important;
+    margin-top: 240px !important;
 
 }
 
@@ -92,4 +92,13 @@
     font-size: 18px;
     margin: 0;
     padding-top: 20px;
+}
+
+.meal-title::after {
+    content: '';
+    height: 4px;
+    display: block;
+    background-color: #99E2D0;
+    width: 30px;
+
 }

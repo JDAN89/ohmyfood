@@ -52,6 +52,7 @@ ul.no-bullets li {
   padding: 5px 0;
 }
 
+/* Heart icon/button */
 .btn-heart {
   position: relative;
   height: 34px;
@@ -84,6 +85,7 @@ ul.no-bullets li {
   opacity: 0;
 }
 
+/* Explore our restaurants and order buttons */
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -93,19 +95,16 @@ ul.no-bullets li {
 .btn__secondary {
   font-size: 15.4px;
   border-radius: 30px;
-  border: none;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
   color: #fff;
-  padding: 18px 20px;
+  padding: 20px 25px;
   text-align: center;
-  align-items: center;
   transition: all 0.3s;
-  width: 100%;
 }
 
 .btn__secondary {
-  width: 200px;
+  min-width: 200px;
 }
 
 .btn__primary:hover,
@@ -152,14 +151,14 @@ ul.no-bullets li {
   left: 10px;
 }
 
-.footer__icon--1 {
-  font-size: 15px;
-  padding-right: 5px;
+.footer__icon--1,
+.footer__icon--2 {
+  width: 30px;
 }
 
 .footer__icon--2 {
-  font-size: 11px;
-  padding-right: 5px;
+  transform: rotate(-15deg);
+  font-size: 15px;
 }
 
 li a {
@@ -183,37 +182,6 @@ li a:hover {
   align-items: center;
   justify-content: center;
   margin-left: -12px;
-}
-
-.btn-heart {
-  position: relative;
-  height: 34px;
-  width: 34px;
-  background-color: transparent;
-  border: 0;
-  font-size: 27px;
-}
-.btn-heart .btn-heart__on {
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  opacity: 0;
-  transition: opacity 300ms;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.btn-heart .btn-heart__off {
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  transition: opacity 300ms;
-}
-.btn-heart:hover .btn-heart__on {
-  opacity: 1;
-}
-.btn-heart:hover .btn-heart__off {
-  opacity: 0;
 }
 
 .card {
@@ -380,10 +348,6 @@ li a:hover {
   flex-direction: column;
 }
 
-.txt-centered {
-  text-align: center;
-}
-
 /* padding-top */
 .pd-top--1 {
   padding-top: 50px;
@@ -397,6 +361,10 @@ li a:hover {
   padding-top: 30px;
 }
 
+.pd-top--4 {
+  padding-top: 10px;
+}
+
 /* padding-bottom */
 .pd-bot--1 {
   padding-bottom: 60px;
@@ -408,6 +376,10 @@ li a:hover {
 
 .pd-bot--3 {
   padding-bottom: 10px;
+}
+
+.pd-bot--4 {
+  padding-bottom: 80px;
 }
 
 .container {
@@ -470,16 +442,14 @@ li a:hover {
   margin-top: 0;
 }
 
-.shadow {
+/* Box-shadow */
+.shadow-1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
-.font-size-m {
-  font-size: 18px;
-}
-
-.font-size-s {
-  font-size: 17px;
+.shadow-2 {
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5);
 }
 
 .full-width {
@@ -497,6 +467,16 @@ li a:hover {
   position: relative;
 }
 
+.left {
+  right: 20px;
+}
+
+.head-spacing {
+  text-align: center;
+  padding: 20px 0 10px 0;
+  margin: 0;
+}
+
 .search {
   display: flex;
   flex-direction: row;
@@ -505,15 +485,12 @@ li a:hover {
   justify-content: center;
 }
 .search .search__icon {
-  position: absolute;
-  left: 109px;
+  padding: 0;
 }
 .search .search__input {
-  position: relative;
   text-align: center;
   background-color: transparent;
   border: none;
-  color: black;
   font-size: 17px;
 }
 .search ::placeholder {
@@ -542,12 +519,26 @@ li a:hover {
   color: #fff;
 }
 
+.txt-centered {
+  text-align: center;
+}
+
 .txt-sz-m {
   font-size: 18px;
 }
 
-.sz-m {
-  height: 20px;
+.txt-sz-s {
+  font-size: 17px;
+}
+
+.txt-white {
+  color: #fff;
+}
+
+.corp-txt {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  margin-bottom: 0;
 }
 
 .menu-img {
@@ -577,7 +568,7 @@ li a:hover {
   flex-direction: column;
   background-color: #F6F6F6;
   border-radius: 40px 40px 0 0;
-  margin-top: 210px !important;
+  margin-top: 240px !important;
 }
 
 .menu-title {
@@ -653,6 +644,14 @@ li a:hover {
   padding-top: 20px;
 }
 
+.meal-title::after {
+  content: "";
+  height: 4px;
+  display: block;
+  background-color: #99E2D0;
+  width: 30px;
+}
+
 .container-expl {
   display: flex;
   flex-direction: column;
@@ -700,7 +699,6 @@ li a:hover {
   display: inline-block;
   text-align: center;
   background-color: transparent;
-  border: solid 1px transparent;
   border-radius: 50%;
   height: 27px;
   width: 27px;
@@ -709,8 +707,6 @@ li a:hover {
 .nav-bar .nav-bar__link-back:hover {
   color: #fff;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  border: solid 1px #fff;
-  box-shadow: 1px 15px 10px -15px #111;
   transform: scale(1.15);
 }
 .nav-bar .nav-bar__logo-wrapper {

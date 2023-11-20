@@ -19,10 +19,26 @@
     color: #fff;
 }
 
+.txt-centered {
+    text-align: center;
+}
+
+
 .txt-sz-m {
     font-size: 18px;
 }
 
-.sz-m {
-    height: 20px
+
+.txt-sz-s {
+    font-size: 17px;
+}
+
+.txt-white {
+    color: $white;
+}
+
+.corp-txt {
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    margin-bottom: 0;
 }

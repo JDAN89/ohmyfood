@@ -19,14 +19,14 @@
     left: 10px;
 }
 
-.footer__icon--1 {
-    font-size: 15px;
-    padding-right: 5px;
+.footer__icon--1,
+.footer__icon--2 {
+    width: 30px;
 }
 
 .footer__icon--2 {
-    font-size: 11px;
-    padding-right: 5px;
+    transform: rotate(-15deg);
+    font-size: 15px;
 }
 
 li a {
@@ -50,43 +50,4 @@ li a:hover {
     align-items: center;
     justify-content: center;
     margin-left: -12px;
-}
-
-
-.btn-heart {
-    position: relative;
-    height: 34px;
-    width: 34px;
-    background-color: transparent;
-    border: 0;
-    font-size: 27px;
-
-    .btn-heart__on {
-        position: absolute;
-        top: 4px;
-        left: 4px;
-        opacity: 0;
-        transition: opacity 300ms;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-
-    }
-
-    .btn-heart__off {
-        position: absolute;
-        top: 4px;
-        left: 4px;
-        transition: opacity 300ms;
-    }
-
-    &:hover {
-        .btn-heart__on {
-            opacity: 1;
-        }
-
-        .btn-heart__off {
-            opacity: 0;
-        }
-    }
 }
