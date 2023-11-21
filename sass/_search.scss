@@ -1,0 +1,33 @@
+.search {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+        padding: 0;
+    }
+
+    &__input {
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        font-size: 17px;
+        width: 150px;
+
+    }
+
+    ::placeholder {
+        color: black;
+        opacity: 1;
+
+
+    }
+
+    :focus {
+        width: 300px;
+
+    }
+
+}

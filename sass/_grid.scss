@@ -1,47 +1,17 @@
-.padding {
-    padding: 10px 0 10px 30px;
-}
-
 .column {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.row-instructions {
-    display: flex;
-    gap: 32px;
-}
-
-/* Bastille */
-.page-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-
-.container-meal {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 768px;
+.container {
+    max-width: 800px;
     margin: auto;
     padding: 0 20px;
 }
 
-.section-menu {
-    background-color: #F6F6F6;
-    border-radius: 40px 40px 0 0;
-    width: 100%;
-    width: 100%;
-    position: static;
-    z-index: 100;
-
+.head-spacing {
+    text-align: center;
+    padding: 20px 0 10px 0;
+    margin: 0;
 }
