@@ -624,4 +624,97 @@ li a:hover {
   width: 300px;
 }
 
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #353535;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: loader;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.loader__spinner {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.loader__spinner-item {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 10px solid transparent;
+  border-radius: 50%;
+  border-top-color: #FF79DA;
+  animation-name: spinner;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.delay-1 {
+  animation-delay: 50ms;
+}
+
+.delay-2 {
+  animation-delay: 100ms;
+}
+
+.delay-3 {
+  animation-delay: 150ms;
+}
+
+.delay-4 {
+  animation-delay: 200ms;
+}
+
+.delay-5 {
+  animation-delay: 250ms;
+}
+
+.delay-6 {
+  animation-delay: 300ms;
+}
+
+.delay-7 {
+  animation-delay: 350ms;
+}
+
+.delay-7 {
+  animation-delay: 400ms;
+}
+
+.delay-8 {
+  animation-delay: 450ms;
+}
+
+.delay-8 {
+  animation-delay: 500ms;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    height: 100%;
+  }
+  100% {
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
