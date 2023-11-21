@@ -344,14 +344,6 @@ li a:hover {
   padding-bottom: 80px;
 }
 
-.nav-bar__logo-wrapper {
-  padding: 20px o;
-}
-
-.padding {
-  padding: 20px o;
-}
-
 .title {
   margin-top: 0;
 }
@@ -429,27 +421,6 @@ li a:hover {
   font-family: "Shrikhand", cursive;
   font-size: 30px;
   margin-bottom: 0;
-}
-
-.menu-img {
-  height: 300px;
-  width: 100%;
-  max-width: 100%;
-  position: absolute;
-  z-index: -10;
-  top: 50px;
-  object-fit: cover;
-}
-
-.padding-btm {
-  padding-bottom: 243px;
-}
-
-.header-logo {
-  text-align: center;
-  height: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .menu {
@@ -542,6 +513,16 @@ li a:hover {
   width: 30px;
 }
 
+.menu-img {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  z-index: -10;
+  top: 50px;
+  object-fit: cover;
+}
+
 .nav-bar {
   background-color: transparent;
   position: relative;
@@ -616,27 +597,6 @@ li a:hover {
   align-items: center;
   justify-content: center;
   margin-left: -14px;
-}
-
-.menu-img {
-  height: 300px;
-  width: 100%;
-  max-width: 100%;
-  position: absolute;
-  z-index: -10;
-  top: 50px;
-  object-fit: cover;
-}
-
-.padding-btm {
-  padding-bottom: 243px;
-}
-
-.header-logo {
-  text-align: center;
-  height: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .search {
