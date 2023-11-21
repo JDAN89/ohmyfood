@@ -1,7 +1,9 @@
+@import 'helpers';
+
+
 .column {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    @extend %column;
 }
 
 .container {

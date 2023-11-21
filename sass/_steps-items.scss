@@ -1,3 +1,5 @@
+@import 'variables';
+
 .steps {
     gap: 32px;
     display: flex;
@@ -8,7 +10,7 @@
 .steps__items {
     @extend %row;
     border-radius: 25px;
-    background-color: #F6F6F6;
+    background-color: $light-grey;
     align-items: center;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     transition: border-color 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
@@ -18,17 +20,17 @@
     font-size: 17px;
 
     &:hover {
-        background-color: lighten(#9356dc, 30%);
+        background-color: lighten($primary, 30%);
 
 
         .steps__icon {
-            color: #9356dc;
+            color: $primary;
         }
     }
 }
 
-.steps__item--bg-grey {
-    background-color: #f6f6f6;
+.steps__item--bg {
+    background-color: $light-grey;
 }
 
 
@@ -39,9 +41,9 @@
 .steps__number {
     height: 27px;
     width: 27px;
-    background-color: #9356DC;
+    background-color: $primary;
     border-radius: 50%;
-    color: #fff;
+    color: $white;
     display: flex;
     align-items: center;
     justify-content: center;
