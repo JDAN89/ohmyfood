@@ -16,7 +16,7 @@
 
     .btn-heart__on {
         position: absolute;
-        top: 4px;
+        top: -6px;
         left: 4px;
         opacity: 0;
         transition: opacity 300ms;
@@ -28,7 +28,7 @@
 
     .btn-heart__off {
         position: absolute;
-        top: 4px;
+        top: -6px;
         left: 4px;
         transition: opacity 300ms;
     }
